@@ -1,5 +1,85 @@
-.status {
-  color: blue;
-  padding: 1em;
-  height: 1em;
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section .backgroupd img {
+  width: 100%;
+}
+// .pad-section .slide{
+//   width: auto;
+//   height: 250px;
+// }
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+/* additional sections */
+#home {
+  background: url(https://lh3.googleusercontent.com/disRCgTTF8wh2bUyUlRgyR3CUcZcWnmSfOIzLVN-SlQUXs_4FKIiEcPFuUviM-yckqZq7RNLIj-lSpBFysGMch_mT6TxeQC2tvTp4lU_2bBogDwdzIGO6ap5VkFCPvhX5t_5IA) no-repeat center center fixed; 
+  display: table;
+  height: 75%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#about {
+}
+#services {
+  background-color: #306d9f;
+  color: #ffffff;
+}
+#services .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+#information {
+  background: url(https://lh3.googleusercontent.com/Qzkk_OzFnvwP7kMY0LtolV4lVHpZCf00pm46-RGWG8QyEBEQmS3hWkkKcPING0h1JfeG9RcA6YWqLOH048bUqU1JB86BDX50aOuanuN3YjJnWa2oTKe5vK9gtWr8ZvRwWbjoXg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#information .panel {
+  opacity: 0.85;
+}
+#google_map {
+  height: 500px;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
 }
