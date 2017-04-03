@@ -63,29 +63,30 @@ $(document).ready(function (){
   }, 1000);
 
   // create a LatLng object containing the coordinate for the center of the map
-  var latlng = new google.maps.LatLng(-33.86455, 151.209);
+  var latlng = new google.maps.LatLng(37.646205, -121.770155);
   // prepare the map properties
   var options = {
-  zoom: 15,
-  center: latlng,
-  mapTypeId: google.maps.MapTypeId.ROADMAP,
-  navigationControl: true,
-  mapTypeControl: false,
-  scrollwheel: false,
-  disableDoubleClickZoom: true
+    zoom: 15,
+    center: latlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    navigationControl: true,
+    mapTypeControl: false,
+    scrollwheel: false,
+    disableDoubleClickZoom: true
   };
   // initialize the map object
   var map = new google.maps.Map(document.getElementById('google_map'), options);
+  // var map2 = new google.maps.Map(document.getElementById('google_map2'), options);
   // add Marker
   var marker1 = new google.maps.Marker({
-  position: latlng, map: map
+    position: latlng, map: map
   });
   // add listener for a click on the pin
   google.maps.event.addListener(marker1, 'click', function() {
-  infowindow.open(map, marker1);
+    infowindow.open(map, marker1);
   });
   // add information window
   var infowindow = new google.maps.InfoWindow({
-  content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
+    content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
   });  
 });

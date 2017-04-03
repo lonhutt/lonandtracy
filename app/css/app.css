@@ -26,9 +26,18 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.glyphicon{
+  color: white;
+}
+
+.navbutton {
+  width: 125px;
+}
+
 /* additional sections */
 #home {
-  background: url(https://lh3.googleusercontent.com/disRCgTTF8wh2bUyUlRgyR3CUcZcWnmSfOIzLVN-SlQUXs_4FKIiEcPFuUviM-yckqZq7RNLIj-lSpBFysGMch_mT6TxeQC2tvTp4lU_2bBogDwdzIGO6ap5VkFCPvhX5t_5IA) no-repeat center center fixed; 
+  background: url(/pics/mountains.PNG) no-repeat center center fixed; 
   display: table;
   height: 75%;
   position: relative;
@@ -38,13 +47,16 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-#about {
+
+#intro {
+  padding-top: 5px;
 }
-#services {
+
+#info {
   background-color: #306d9f;
   color: #ffffff;
 }
-#services .glyphicon {
+#info .glyphicon {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
   display: inline-block;
@@ -55,8 +67,21 @@ html, body {
   vertical-align: middle;
   width: 140px;
 }
-#information {
-  background: url(https://lh3.googleusercontent.com/Qzkk_OzFnvwP7kMY0LtolV4lVHpZCf00pm46-RGWG8QyEBEQmS3hWkkKcPING0h1JfeG9RcA6YWqLOH048bUqU1JB86BDX50aOuanuN3YjJnWa2oTKe5vK9gtWr8ZvRwWbjoXg) no-repeat center center fixed; 
+
+#storybuffer {
+  background: url(/pics/lookoutm.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 400px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#venue {
+  background: url(/pics/winery.jpeg) no-repeat center center fixed; 
   display: table;
   height: 800px;
   position: relative;
@@ -66,7 +91,7 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-#information .panel {
+#venue .panel {
   opacity: 0.85;
 }
 #google_map {
