@@ -10,10 +10,7 @@ html, body {
 .pad-section .backgroupd img {
   width: 100%;
 }
-// .pad-section .slide{
-//   width: auto;
-//   height: 250px;
-// }
+
 /* vertical-centered text */
 .text-vcenter {
   display: table-cell;
@@ -68,8 +65,8 @@ html, body {
   width: 140px;
 }
 
-#storybuffer {
-  background: url(/pics/lookoutm.jpg) no-repeat center center fixed; 
+#story {
+  background: url(/pics/mountain1.jpg) no-repeat center center fixed; 
   display: table;
   height: 400px;
   position: relative;
@@ -80,7 +77,11 @@ html, body {
   background-size: cover;
 }
 
-#venue {
+#agenda {
+  background-color: #375a7f;
+}
+
+#agendacontent {
   background: url(/pics/winery.jpeg) no-repeat center center fixed; 
   display: table;
   height: 800px;
@@ -91,11 +92,93 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-#venue .panel {
+
+#agendacontent .panel {
   opacity: 0.85;
 }
+
 #google_map {
   height: 500px;
+}
+
+#accomodations {
+  background-color: #00bc8c;
+}
+
+#accomodationscontent {
+  background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#activities {
+  background-color: #3498db;
+}
+
+#activitiescontent {
+  background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#bparty {
+  background-color: #f39c12;
+}
+
+#bpartycontent {
+  background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#registy {
+  background-color: #e74c3c;
+}
+
+#registycontent {
+  background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#photos {
+  background-color: #464545;
+}
+
+#photoscontent {
+  background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 footer {
