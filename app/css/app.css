@@ -32,6 +32,10 @@ html, body {
   width: 125px;
 }
 
+.mapmarker {
+  color: black;
+}
+
 /* additional sections */
 #home {
   background: url(/pics/mountains.PNG) no-repeat center center fixed; 

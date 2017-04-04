@@ -32,7 +32,7 @@
 
 // });
 
-$(document).ready(function (){
+$(function() {
 
   var countDownDate = new Date("Oct 6, 2017 17:30:00").getTime();
 
@@ -87,6 +87,16 @@ $(document).ready(function (){
   });
   // add information window
   var infowindow = new google.maps.InfoWindow({
-    content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
+    content:  `
+      <div class="mapmarker">
+        <h3>Las Positas Vineyards</h3><hr/>
+        <div class="btn-toolbar">
+          <a href="https://www.laspositasvineyards.com/" target="_blank" class="btn btn-info" role="button">Website</a>
+          <a href="https://goo.gl/maps/nYfRCBEyUBw" target="_blank" class="btn btn-info pull-right" role="button">Directions</a>
+        </div>
+
+        
+      </div>
+    `
   });  
 });
