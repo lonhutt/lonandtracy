@@ -173,17 +173,14 @@ $(function() {
     });
     // add information window
     var infowindow = new google.maps.InfoWindow({
-      content:  `
-        <div class="mapmarker">
-          <h3>Las Positas Vineyards</h3><hr/>
-          <div class="btn-toolbar">
-            <a href="https://www.laspositasvineyards.com/" target="_blank" class="btn btn-info" role="button">Website</a>
-            <a href="https://goo.gl/maps/nYfRCBEyUBw" target="_blank" class="btn btn-info pull-right" role="button">Directions</a>
-          </div>
-
-          
-        </div>
-      `
+      content: "<div class="mapmarker">"+
+          "<h3>Las Positas Vineyards</h3><hr/>"+
+          "<div class="btn-toolbar">"+
+            "<a href="https://www.laspositasvineyards.com/" target="_blank" class="btn btn-info" role="button">Website</a>"+
+            "<a href="https://goo.gl/maps/nYfRCBEyUBw" target="_blank" class="btn btn-info pull-right" role="button">Directions</a>"+
+          "</div>"+
+        "</div>"
+      
     });
   
     
