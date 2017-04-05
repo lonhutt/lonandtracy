@@ -86,7 +86,7 @@ html, body {
 }
 
 #agendacontent {
-  background: url(/pics/winery.jpeg) no-repeat center center fixed; 
+  background: url(/pics/winery.jpg) no-repeat center center fixed; 
   display: table;
   height: 800px;
   position: relative;
@@ -101,8 +101,12 @@ html, body {
   opacity: 0.85;
 }
 
+#map_header {
+  background-color: #e74c3c;
+}
+
 #google_map {
-  height: 500px;
+  height: 600px;
 }
 
 #accomodations {
@@ -174,7 +178,7 @@ html, body {
 }
 
 #photoscontent {
-  background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
+  // background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
   display: table;
   height: 800px;
   position: relative;

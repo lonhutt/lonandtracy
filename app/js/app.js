@@ -34,131 +34,145 @@ $(function() {
  
 
     // create a LatLng object containing the coordinate for the center of the map
-    var latlng = new google.maps.LatLng(37.646205, -121.770155);
+    var venue = new google.maps.LatLng(37.645800, -121.770499);
+    var hotel = new google.maps.LatLng(37.702661, -121.816585);
+    var sfo = new google.maps.LatLng(37.615501, -122.389489);
+    var sjc = new google.maps.LatLng(37.369581, -121.929800);
+    var oak = new google.maps.LatLng(37.713241, -122.212191);
+    var center = new google.maps.LatLng(37.593639, -122.043976);
+
     // prepare the map properties
     var options = {
-      zoom: 15,
-      center: latlng,
+      zoom: 10,
+      center: center,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       navigationControl: true,
       mapTypeControl: false,
       scrollwheel: false,
       disableDoubleClickZoom: true
-      // styles: [
-      //           {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-      //           {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-      //           {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-      //           {
-      //             featureType: 'administrative.locality',
-      //             elementType: 'labels.text.fill',
-      //             stylers: [{color: '#d59563'}]
-      //           },
-      //           {
-      //             featureType: 'poi',
-      //             elementType: 'labels.text.fill',
-      //             stylers: [{color: '#d59563'}]
-      //           },
-      //           {
-      //             featureType: 'poi.park',
-      //             elementType: 'geometry',
-      //             stylers: [{color: '#263c3f'}]
-      //           },
-      //           {
-      //             featureType: 'poi.park',
-      //             elementType: 'labels.text.fill',
-      //             stylers: [{color: '#6b9a76'}]
-      //           },
-      //           {
-      //             featureType: 'road',
-      //             elementType: 'geometry',
-      //             stylers: [{color: '#38414e'}]
-      //           },
-      //           {
-      //             featureType: 'road',
-      //             elementType: 'geometry.stroke',
-      //             stylers: [{color: '#212a37'}]
-      //           },
-      //           {
-      //             featureType: 'road',
-      //             elementType: 'labels.text.fill',
-      //             stylers: [{color: '#9ca5b3'}]
-      //           },
-      //           {
-      //             featureType: 'road.highway',
-      //             elementType: 'geometry',
-      //             stylers: [{color: '#746855'}]
-      //           },
-      //           {
-      //             featureType: 'road.highway',
-      //             elementType: 'geometry.stroke',
-      //             stylers: [{color: '#1f2835'}]
-      //           },
-      //           {
-      //             featureType: 'road.highway',
-      //             elementType: 'labels.text.fill',
-      //             stylers: [{color: '#f3d19c'}]
-      //           },
-      //           {
-      //             featureType: 'transit',
-      //             elementType: 'geometry',
-      //             stylers: [{color: '#2f3948'}]
-      //           },
-      //           {
-      //             featureType: 'transit.station',
-      //             elementType: 'labels.text.fill',
-      //             stylers: [{color: '#d59563'}]
-      //           },
-      //           {
-      //             featureType: 'water',
-      //             elementType: 'geometry',
-      //             stylers: [{color: '#17263c'}]
-      //           },
-      //           {
-      //             featureType: 'water',
-      //             elementType: 'labels.text.fill',
-      //             stylers: [{color: '#515c6d'}]
-      //           },
-      //           {
-      //             featureType: 'water',
-      //             elementType: 'labels.text.stroke',
-      //             stylers: [{color: '#17263c'}]
-      //           }
-      //         ]
+      
     };
 
     // initialize the map object
     var map = new google.maps.Map(document.getElementById('google_map'), options);
-    // var map2 = new google.maps.Map(document.getElementById('google_map2'), options);
+    
     // add Marker
-    var marker1 = new google.maps.Marker({
-      position: latlng, map: map
+    var venueMarker = new google.maps.Marker({
+      position: venue, map: map
     });
-    // add listener for a click on the pin
-    google.maps.event.addListener(marker1, 'click', function() {
-      infowindow.open(map, marker1);
+
+    var hotelMarker = new google.maps.Marker({
+      position: hotel, map: map
     });
+
+    var sfoMarker = new google.maps.Marker({
+      position: sfo, map: map
+    });
+
+    var sjcMarker = new google.maps.Marker({
+      position: sjc, map: map
+    });
+
+    var oakMarker = new google.maps.Marker({
+      position: oak, map: map
+    });
+
+
     // add information window
-    var infowindow = new google.maps.InfoWindow({
+    var venueWindow = new google.maps.InfoWindow({
       content: '<div class="mapmarker">'+
           '<h3>Las Positas Vineyards</h3><hr/>'+
           '<div class="btn-toolbar">'+
             '<a href="https://www.laspositasvineyards.com/" target="_blank" class="btn btn-info" role="button">Website</a>'+
-            '<a href="https://goo.gl/maps/nYfRCBEyUBw" target="_blank" class="btn btn-info pull-right" role="button">Directions</a>'+
+            '<a href="https://goo.gl/maps/KrEmgrbisms" target="_blank" class="btn btn-info pull-right" role="button">Open in Maps</a>'+
           '</div>'+
         '</div>'
       
     });
+
+    // add information window
+    var hotelWindow = new google.maps.InfoWindow({
+      content: '<div class="mapmarker">'+
+          '<h3>Hampton Inn</h3><hr/>'+
+          '<div class="btn-toolbar">'+
+            '<a href="http://www.staylivermore.com" target="_blank" class="btn btn-info" role="button">Website</a>'+
+            '<a href="https://goo.gl/maps/LZtp4cK2YUr" target="_blank" class="btn btn-info pull-right" role="button">Open in Maps</a>'+
+          '</div>'+
+        '</div>'
+      
+    });
+
+    // add information window
+    var sfoWindow = new google.maps.InfoWindow({
+      content: '<div class="mapmarker">'+
+          '<h3>SF Airport</h3><hr/>'+
+          '<div class="btn-toolbar">'+
+            '<a href="https://goo.gl/maps/BmvzbppDdGH2" target="_blank" class="btn btn-info" role="button">Directions to Hotel</a>'+
+            '<a href="https://goo.gl/maps/QJf46EDV9Fo" target="_blank" class="btn btn-info pull-right" role="button">Directions to Venue</a>'+
+          '</div>'+
+        '</div>'
+      
+    });
+
+    // add information window
+    var sjcWindow = new google.maps.InfoWindow({
+      content: '<div class="mapmarker">'+
+          '<h3>San Jose Airport</h3><hr/>'+
+          '<div class="btn-toolbar">'+
+            '<a href="https://goo.gl/maps/SXgdwP1QaP52" target="_blank" class="btn btn-info" role="button">Directions to Hotel</a>'+
+            '<a href="https://goo.gl/maps/7tSXgY5aSF12" target="_blank" class="btn btn-info pull-right" role="button">Directions to Venue</a>'+
+          '</div>'+
+        '</div>'
+      
+    });
+
+    // add information window
+    var oakWindow = new google.maps.InfoWindow({
+      content: '<div class="mapmarker">'+
+          '<h3>Oakland Airport</h3><hr/>'+
+          '<div class="btn-toolbar">'+
+            '<a href="https://goo.gl/maps/xmXNtusiRey" target="_blank" class="btn btn-info" role="button">Directions to Hotel</a>'+
+            '<a href="https://goo.gl/maps/qb92chA2chT2" target="_blank" class="btn btn-info pull-right" role="button">Directions to Venue</a>'+
+          '</div>'+
+        '</div>'
+      
+    });
+
+    // add listener for a click on the pin
+    google.maps.event.addListener(venueMarker, 'click', function() {
+      venueWindow.open(map, venueMarker);
+    });
+
+    google.maps.event.addListener(hotelMarker, 'click', function() {
+      hotelWindow.open(map, hotelMarker);
+    });
+
+    google.maps.event.addListener(sfoMarker, 'click', function() {
+      sfoWindow.open(map, sfoMarker);
+    });
+
+    google.maps.event.addListener(sjcMarker, 'click', function() {
+      sjcWindow.open(map, sjcMarker);
+    });
+
+    google.maps.event.addListener(oakMarker, 'click', function() {
+      oakWindow.open(map, oakMarker);
+    });
+    
 
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
 
-    $('.grid').masonry({
+    var $grid = $('.grid').masonry({
       itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
       columnWidth: '.grid-sizer',
       percentPosition: true
     });
-  
+    
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
+    });
     
 });
