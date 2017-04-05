@@ -148,6 +148,17 @@ $(function() {
         '</div>'
       
     });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+
+    $('.grid').masonry({
+      itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
   
     
 });
