@@ -43,7 +43,6 @@ html, body {
   height: 75%;
   position: relative;
   width: 100%;
-  min-width: 100%;
   min-height: 75%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -77,7 +76,6 @@ html, body {
   height: 400px;
   position: relative;
   width: 100%;
-  min-width: 100%;
   min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -95,7 +93,6 @@ html, body {
   height: 800px;
   position: relative;
   width: 100%;
-  min-width: 100%;
   min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -125,7 +122,6 @@ html, body {
   height: 800px;
   position: relative;
   width: 100%;
-  min-width: 100%;
   min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -143,7 +139,6 @@ html, body {
   height: 800px;
   position: relative;
   width: 100%;
-  min-width: 100%;
   min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -161,7 +156,6 @@ html, body {
   height: 800px;
   position: relative;
   width: 100%;
-  min-width: 100%;
   min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -179,7 +173,6 @@ html, body {
   height: 800px;
   position: relative;
   width: 100%;
-  min-width: 100%;
   min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -190,20 +183,6 @@ html, body {
 #photos {
   background-color: #464545;
 }
-
-// #photoscontent {
-//   // background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
-//   display: table;
-//   height: 800px;
-//   position: relative;
-//   width: 100%;
-//   min-width: 100%;
-//   min-height: 100%;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-// }
 
 footer {
   padding: 20px 0;
