@@ -49,7 +49,23 @@ $(function() {
       navigationControl: true,
       mapTypeControl: false,
       scrollwheel: false,
-      disableDoubleClickZoom: true
+      disableDoubleClickZoom: true,
+      styles: [
+        {
+          "featureType": "administrative.locality",
+          "elementType": "labels",
+          "stylers": [
+            { "visibility": "off" }
+          ]
+        }
+      ]
+      // styles: [
+      //   {
+      //     featureType: "landscape",
+      //     elementType: "labels",
+      //     stylers: [{visibility: "off"}]
+      //   }
+      // ]
       
     };
 
@@ -58,23 +74,38 @@ $(function() {
     
     // add Marker
     var venueMarker = new google.maps.Marker({
-      position: venue, map: map
+      position: venue, 
+      label: 'Venue',
+      animation: google.maps.Animation.DROP,
+      map: map
     });
 
     var hotelMarker = new google.maps.Marker({
-      position: hotel, map: map
+      position: hotel, 
+      label: 'Hotel',
+      animation: google.maps.Animation.DROP,
+      map: map
     });
 
     var sfoMarker = new google.maps.Marker({
-      position: sfo, map: map
+      position: sfo, 
+      label: 'SFO',
+      animation: google.maps.Animation.DROP,
+      map: map
     });
 
     var sjcMarker = new google.maps.Marker({
-      position: sjc, map: map
+      position: sjc, 
+      label: 'SJC',
+      animation: google.maps.Animation.DROP,
+      map: map
     });
 
     var oakMarker = new google.maps.Marker({
-      position: oak, map: map
+      position: oak, 
+      label: 'OAK',
+      animation: google.maps.Animation.DROP,
+      map: map
     });
 
 

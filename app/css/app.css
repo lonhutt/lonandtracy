@@ -97,9 +97,9 @@ html, body {
   background-size: cover;
 }
 
-#agendacontent .panel {
-  opacity: 0.85;
-}
+// #agendacontent .panel {
+//   opacity: 0.85;
+// }
 
 #map_header {
   background-color: #e74c3c;
