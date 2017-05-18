@@ -38,7 +38,7 @@ html, body {
 
 /* additional sections */
 #home {
-  background: url(/pics/mountains.PNG) no-repeat center center fixed;
+  background: url(/pics/mountains.jpg) no-repeat center center fixed;
   background-attached:fixed;
   display: table;
   height: 75%;
