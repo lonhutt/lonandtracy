@@ -15,11 +15,14 @@ handlers:
 
 - url: /rest/.*
   script: main.APP
+  secure: always
 
 - url: /(.+)
   static_files: app/\1
   upload: app/.*
+  secure: always
 
 - url: /
   static_files: app/index.html
   upload: app/index.html
+  secure: always
