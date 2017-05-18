@@ -3,6 +3,9 @@ threadsafe: true
 api_version: 1
 
 handlers:
+- url: /.well-known
+  static_dir: .well-known
+  
 - url: /rest/.*
   script: main.APP
 
@@ -13,6 +16,3 @@ handlers:
 - url: /
   static_files: app/index.html
   upload: app/index.html
-
-- url: /.well-known/*
-  static_dir: .well-known
