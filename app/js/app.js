@@ -39,7 +39,8 @@ $(function() {
     var sfo = new google.maps.LatLng(37.615501, -122.389489);
     var sjc = new google.maps.LatLng(37.369581, -121.929800);
     var oak = new google.maps.LatLng(37.713241, -122.212191);
-    var center = new google.maps.LatLng(37.593639, -122.043976);
+    var brunch = new google.maps.LatLng(37.903204, -121.728903);
+    var center = new google.maps.LatLng(37.651494, -122.014554);
 
     // prepare the map properties
     var options = {
@@ -108,14 +109,21 @@ $(function() {
       map: map
     });
 
+    var brunchMarker = new google.maps.Marker({
+      position: brunch, 
+      label: 'Brunch',
+      animation: google.maps.Animation.DROP,
+      map: map
+    });
+
 
     // add information window
     var venueWindow = new google.maps.InfoWindow({
       content: '<div class="mapmarker">'+
           '<h3>Las Positas Vineyards</h3><hr/>'+
           '<div class="btn-toolbar">'+
-            '<a href="https://www.laspositasvineyards.com/" target="_blank" class="btn btn-info" role="button">Website</a>'+
-            '<a href="https://goo.gl/maps/KrEmgrbisms" target="_blank" class="btn btn-info pull-right" role="button">Open in Maps</a>'+
+            '<a href="https://www.laspositasvineyards.com/" target="_blank" rel="noopener" class="btn btn-info" role="button">Website</a>'+
+            '<a href="https://goo.gl/maps/KrEmgrbisms" target="_blank" rel="noopener" class="btn btn-info pull-right" role="button">Open in Maps</a>'+
           '</div>'+
         '</div>'
       
@@ -126,8 +134,8 @@ $(function() {
       content: '<div class="mapmarker">'+
           '<h3>Hampton Inn</h3><hr/>'+
           '<div class="btn-toolbar">'+
-            '<a href="http://www.staylivermore.com" target="_blank" class="btn btn-info" role="button">Website</a>'+
-            '<a href="https://goo.gl/maps/LZtp4cK2YUr" target="_blank" class="btn btn-info pull-right" role="button">Open in Maps</a>'+
+            '<a href="http://www.staylivermore.com" target="_blank" rel="noopener" class="btn btn-info" role="button">Website</a>'+
+            '<a href="https://goo.gl/maps/LZtp4cK2YUr" target="_blank" rel="noopener" class="btn btn-info pull-right" role="button">Open in Maps</a>'+
           '</div>'+
         '</div>'
       
@@ -138,8 +146,8 @@ $(function() {
       content: '<div class="mapmarker">'+
           '<h3>SF Airport</h3><hr/>'+
           '<div class="btn-toolbar">'+
-            '<a href="https://goo.gl/maps/BmvzbppDdGH2" target="_blank" class="btn btn-info" role="button">Directions to Hotel</a>'+
-            '<a href="https://goo.gl/maps/QJf46EDV9Fo" target="_blank" class="btn btn-info pull-right" role="button">Directions to Venue</a>'+
+            '<a href="https://goo.gl/maps/BmvzbppDdGH2" target="_blank" rel="noopener" class="btn btn-info" role="button">Directions to Hotel</a>'+
+            '<a href="https://goo.gl/maps/QJf46EDV9Fo" target="_blank" rel="noopener" class="btn btn-info pull-right" role="button">Directions to Venue</a>'+
           '</div>'+
         '</div>'
       
@@ -150,8 +158,8 @@ $(function() {
       content: '<div class="mapmarker">'+
           '<h3>San Jose Airport</h3><hr/>'+
           '<div class="btn-toolbar">'+
-            '<a href="https://goo.gl/maps/SXgdwP1QaP52" target="_blank" class="btn btn-info" role="button">Directions to Hotel</a>'+
-            '<a href="https://goo.gl/maps/7tSXgY5aSF12" target="_blank" class="btn btn-info pull-right" role="button">Directions to Venue</a>'+
+            '<a href="https://goo.gl/maps/SXgdwP1QaP52" target="_blank" rel="noopener" class="btn btn-info" role="button">Directions to Hotel</a>'+
+            '<a href="https://goo.gl/maps/7tSXgY5aSF12" target="_blank" rel="noopener" class="btn btn-info pull-right" role="button">Directions to Venue</a>'+
           '</div>'+
         '</div>'
       
@@ -162,8 +170,19 @@ $(function() {
       content: '<div class="mapmarker">'+
           '<h3>Oakland Airport</h3><hr/>'+
           '<div class="btn-toolbar">'+
-            '<a href="https://goo.gl/maps/xmXNtusiRey" target="_blank" class="btn btn-info" role="button">Directions to Hotel</a>'+
-            '<a href="https://goo.gl/maps/qb92chA2chT2" target="_blank" class="btn btn-info pull-right" role="button">Directions to Venue</a>'+
+            '<a href="https://goo.gl/maps/xmXNtusiRey" target="_blank" rel="noopener" class="btn btn-info" role="button">Directions to Hotel</a>'+
+            '<a href="https://goo.gl/maps/qb92chA2chT2" target="_blank" rel="noopener" class="btn btn-info pull-right" role="button">Directions to Venue</a>'+
+          '</div>'+
+        '</div>'
+      
+    });
+
+    // add information window
+    var brunchWindow = new google.maps.InfoWindow({
+      content: '<div class="mapmarker">'+
+          '<h3>Godfrey Residence</h3><hr/>'+
+          '<div class="btn-toolbar">'+
+            '<a href="https://goo.gl/maps/HNdh7LQQmn42" target="_blank" rel="noopener" class="btn btn-info" role="button">Directions from Hotel</a>'+
           '</div>'+
         '</div>'
       
@@ -188,6 +207,10 @@ $(function() {
 
     google.maps.event.addListener(oakMarker, 'click', function() {
       oakWindow.open(map, oakMarker);
+    });
+
+    google.maps.event.addListener(brunchMarker, 'click', function() {
+      brunchWindow.open(map, brunchMarker);
     });
     
 
