@@ -2,10 +2,17 @@ runtime: python27
 threadsafe: true
 api_version: 1
 
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+
+
 handlers:
 - url: /.well-known
   static_dir: .well-known
-  
+
 - url: /rest/.*
   script: main.APP
 
