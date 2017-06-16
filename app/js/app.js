@@ -24,7 +24,7 @@ $(function() {
     // If the count down is finished, write some text 
     if (distance < 0) {
       clearInterval(x);
-      $("#countdown").html("EXPIRED");
+      $("#countdown").html("Party Time!!");
     }
   }, 1000);
 

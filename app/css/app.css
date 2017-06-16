@@ -102,9 +102,9 @@ html, body {
 //   opacity: 0.85;
 // }
 
-#map_header {
-  background-color: #e74c3c;
-}
+// #map_header {
+//   background-color: #e74c3c;
+// }
 
 #google_map {
   height: 600px;
@@ -127,7 +127,7 @@ html, body {
 }
 
 #activities {
-  background-color: #3498db;
+  background-color: #e74c3c;
 }
 
 #activitiescontent {
@@ -158,20 +158,20 @@ html, body {
   background-size: cover;
 }
 
-#registy {
-  background-color: #e74c3c;
+#registry {
+  background-color: #3498db;
 }
 
-#registycontent {
-  background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
-  display: table;
-  height: 800px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#registrycontent {
+  // background: url(/pics/mountain2.jpg) no-repeat center center fixed; 
+  // display: table;
+  // height: 800px;
+  // position: relative;
+  // width: 100%;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 }
 
 #photos {
